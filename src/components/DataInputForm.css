@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #42c442, #027702);
+  color: #013220;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Styling */
+.data-input-container {
+  width: 90%;
+  max-width: 1200px; /* Adjusted for wider screens */
+  margin: 50px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #004d00;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+.data-input-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #004d00;
+}
+
+/* Instructions Styling */
+.instructions {
+  font-size: 16px;
+  color: #004d00;
+  background-color: rgba(240, 255, 240, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  border-left: 5px solid #008000;
+}
+
+/* Form Styling */
+.data-input-form {
+  display: flex;
+  flex-wrap: wrap; /* Allows form elements to wrap to the next line on smaller screens */
+  gap: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  flex: 1 1 calc(50% - 20px); /* Allows each form group to take 50% of the container width minus the gap */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.form-group label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #006400;
+}
+
+/* Input and Select Styling */
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #006400;
+  font-size: 24px;
+  width: 100%;
+  background-color: #fff;
+  color: #004d00;
+  transition: all 0.3s ease;
+  appearance: none;
+  outline: none;
+}
+
+/* Placeholder Color */
+.form-group select:invalid {
+  color: #008000;
+}
+
+/* Input and Select Focus Styling */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #008000;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.3);
+}
+
+/* Button Styling */
+.submit-button {
+  padding: 15px;
+  background: linear-gradient(to right, #006400, #008000);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #008000, #006400);
+  box-shadow: 0 8px 15px rgba(0, 128, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Instructions Bottom Styling */
+.instructions-bottom {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #004d00;
+  background-color: rgba(240, 255, 240, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  border-left: 5px solid #008000;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .data-input-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%; /* Each form group takes full width on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .data-input-container {
+    padding: 30px 20px;
+    margin: 30px auto;
+  }
+
+  .data-input-container h2 {
+    font-size: 28px;
+  }
+
+  .instructions,
+  .instructions-bottom {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    padding: 12px;
+  }
+}

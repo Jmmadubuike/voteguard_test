@@ -1,0 +1,115 @@
+/* src/components/LoginPage.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #013220;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  color: #007f00;
+  font-size: 2rem;
+}
+
+.slogan {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #013220;
+  margin-bottom: 15px;
+}
+
+.encouragement {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #013220;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #008000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 30px;
+}
+
+button:hover {
+  background-color: #005700;
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .slogan {
+    font-size: 0.9rem;
+  }
+
+  .encouragement {
+    font-size: 0.8rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

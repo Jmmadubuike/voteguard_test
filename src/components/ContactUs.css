@@ -1,0 +1,106 @@
+/* src/pages/ContactUs.css */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #013220; /* Nigerian green */
+  text-align: center;
+  position: relative; /* Required for absolute positioning of background logo */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  color: #007f00; /* Nigerian green */
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #007f00; /* Nigerian green */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background-color: #007f00; /* Nigerian green */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005700; /* Darker Nigerian green */
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-details p,
+.footer-developers p {
+  margin: 5px 0;
+}
+
+.footer-developers a {
+  color: #007f00; /* Nigerian green */
+  text-decoration: none;
+}

@@ -1,0 +1,57 @@
+/* src/pages/AboutUs.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #013220; /* Nigerian green */
+  text-align: center;
+  position: relative;
+  background-image: url('../assets/voteguard-logo.png'); /* Replace with the path to your logo image */
+  background-size: contain; /* Adjust the size of the background image */
+  background-position: center; /* Center the background image */
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Less transparent background for better text readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #007f00; /* Nigerian green */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-details p,
+.footer-developers p {
+  margin: 5px 0;
+}

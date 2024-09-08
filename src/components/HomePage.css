@@ -1,0 +1,261 @@
+/* General Layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #008000; /* Nigerian green */
+  text-align: center;
+  position: relative;
+}
+
+/* Background Logo */
+.background-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/voteguard-logo.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 30px;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 28px;
+  color: #007f00; /* Nigerian green */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #007f00;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Motion Text */
+.motion-texts {
+  width: 100%;
+  overflow: hidden;
+  background-color: #007f00;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.motion-texts-inner {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+.moving-text {
+  font-size: 1.2rem;
+  padding: 0 50px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.feature {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  color: #007f00;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Login Button */
+.login-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #008000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.login-button:hover {
+  background-color: #005700;
+}
+
+@media (max-width: 480px) {
+  .login-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Support Section */
+.support-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.support-section p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.btc-qr-code img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* Party List */
+.party-list {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.party-list h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.party-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.party-list li {
+  padding: 10px;
+  font-size: 18px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.party-list li:hover {
+  background: #e2e6ea;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .party-list ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .slogan {
+    font-size: 1.2rem;
+  }
+}
