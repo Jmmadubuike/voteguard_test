@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/voteguard_test/static/css/main.3789098e.css",
+    "main.js": "/voteguard_test/static/js/main.6e21506c.js",
+    "static/js/453.74f01151.chunk.js": "/voteguard_test/static/js/453.74f01151.chunk.js",
+    "static/media/voteguard-logo.png": "/voteguard_test/static/media/voteguard-logo.115f4e5372b65af6bfdb.png",
+    "static/media/btc-qr-code.jpg": "/voteguard_test/static/media/btc-qr-code.b01037b124db6733f7be.jpg",
+    "index.html": "/voteguard_test/index.html",
+    "main.3789098e.css.map": "/voteguard_test/static/css/main.3789098e.css.map",
+    "main.6e21506c.js.map": "/voteguard_test/static/js/main.6e21506c.js.map",
+    "453.74f01151.chunk.js.map": "/voteguard_test/static/js/453.74f01151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3789098e.css",
+    "static/js/main.6e21506c.js"
+  ]
+}
