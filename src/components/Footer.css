@@ -1,7 +1,18 @@
 .footer {
-    background-color: #008000; /* Nigerian Green */
-    color: white;
-    padding: 10px;
-    text-align: center;
+  position: fixed; /* Ensures it stays at the bottom */
+  bottom: 0;
+  width: 100%; /* Makes it stretch across the entire screen */
+  background-color: #008000; /* Dark background */
+  color: #fff; /* White text */
+  text-align: center; /* Center-aligns the text */
+  padding: 10px 0; /* Adds vertical padding */
+  font-size: 14px; /* Adjust font size for readability */
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 12px; /* Reduce font size on small screens */
+    padding: 8px 0; /* Adjust padding for smaller screens */
   }
-  
+}

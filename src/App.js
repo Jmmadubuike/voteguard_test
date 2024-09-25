@@ -10,7 +10,7 @@ import ContactUs from "./components/ContactUs";
 import DataInputForm from "./components/DataInputForm";
 import ProfilePage from "./components/ProfilePage"; // Your profile page
 import DashboardPage from "./components/DashboardPage";
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 const App = () => {
   return (
